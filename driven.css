@@ -8,14 +8,138 @@
 .principal{
     background-color: yellow;
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .bloco1{
-    background-color: green;
-    height: 50%;
-    width: 50%;
+    background-color: red;
+    height: 4%;
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2%;
 }
+ 
 .bloco2{
-    background-color: purple;
-    height: 50%;
-    width: 50%;
+    background-color:blueviolet ;
+    height: 40%;
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bloco-imagens1{
+    background-color:red;
+    height: 40%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.bloco-imagens2{
+    background-color:rgb(248, 248, 248);
+    height: 40%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.bloco-imagens3{
+    background-color:rgb(255, 123, 0);
+    height: 40%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.bloco-imagens4{
+    background-color:rgb(68, 0, 255);
+    height: 40%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.bloco-imagens5{
+    background-color:rgb(255, 0, 191);
+    height: 40%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.bloco-imagens6{
+    background-color:rgb(0, 255, 85);
+    height: 40%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.bloco-imagens7{
+    background-color:rgb(200, 255, 0);
+    height: 40%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.bloco-imagens1 > img{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.bloco-imagens2 > img{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.bloco-imagens3 > img{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.bloco-imagens4 > img{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.bloco-imagens5 > img{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.bloco-imagens6 > img{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.bloco-imagens7 > img{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
 }
