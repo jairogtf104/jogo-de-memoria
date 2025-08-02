@@ -34,6 +34,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 .bloco1{
     background-color: #abf853;
@@ -43,6 +44,7 @@ body{
     margin-right: 2%;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
  
 .bloco2{
@@ -52,6 +54,7 @@ body{
     margin-right: 2%;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .bloco-imagens1{
