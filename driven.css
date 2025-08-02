@@ -15,12 +15,17 @@ body{
 }
 .titulo{
     background-color: blue;
-    height: 40%;
-    width: 80%;
+    height: 10%;
+    width: 100%;
     font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .principal{
     background-color: yellow;
+    height: 70%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -29,15 +34,17 @@ body{
 }
 .bloco1{
     background-color: rgb(0, 195, 255);
-    height: 60%;
+    height: 50%;
     width: 90%;
+    margin-top: 5%;
+    margin-bottom: 2%;
     display: flex;
     justify-content: space-evenly;
 }
  
 .bloco2{
     background-color:blueviolet ;
-    height: 60%;
+    height: 50%;
     width: 90%;
     display: flex;
     justify-content: space-evenly;
@@ -45,8 +52,7 @@ body{
 
 .bloco-imagens1{
     background-color:red;
-    height: 90%;
-    width: 60%;
+    height: 100%;
     margin-right: 20px;
     display: flex;
     justify-content: center;
@@ -56,8 +62,7 @@ body{
 }
 .bloco-imagens2{
     background-color:rgb(248, 248, 248);
-    height: 90%;
-    width: 60%;
+    height: 100%;
     margin-right: 20px;
     display: flex;
     justify-content: center;
@@ -67,8 +72,7 @@ body{
 }
 .bloco-imagens3{
     background-color:rgb(255, 123, 0);
-    height: 90%;
-    width: 60%;
+    height: 100%;
     margin-right: 20px;
     display: flex;
     justify-content: center;
@@ -78,8 +82,7 @@ body{
 }
 .bloco-imagens4{
     background-color:rgb(68, 0, 255);
-    height: 90%;
-    width: 60%;
+    height: 100%;
     margin-right: 20px;
     display: flex;
     justify-content: center;
@@ -89,8 +92,7 @@ body{
 }
 .bloco-imagens5{
     background-color:rgb(255, 0, 191);
-    height: 90%;
-    width: 60%;
+    height: 100%;
     margin-right: 20px;
     display: flex;
     justify-content: center;
@@ -100,19 +102,17 @@ body{
 }
 .bloco-imagens6{
     background-color:rgb(0, 255, 85);
-    height: 90%;
-    width: 60%;
+    height: 100%;
     margin-right: 20px;
     display: flex;
     justify-content: center;
     justify-items: center;
     align-items: center;
     border-radius: 5px;
-}
+}s
 .bloco-imagens7{
     background-color:rgb(200, 255, 0);
-    height: 90%;
-    width: 60%;
+    height: 100%;
     display: flex;
     justify-content: center;
     justify-items: center;
