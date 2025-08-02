@@ -1,30 +1,43 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .conteudo{
     background-color: red;
+    height: 80%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .titulo{
     background-color: blue;
-    width: 70%;
+    height: 40%;
+    width: 80%;
+    font-size: 50px;
 }
 .principal{
     background-color: yellow;
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .bloco1{
-    background-color: red;
-    height: 4%;
+    background-color: rgb(0, 195, 255);
+    height: 60%;
     width: 90%;
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 2%;
 }
  
 .bloco2{
     background-color:blueviolet ;
-    height: 40%;
+    height: 60%;
     width: 90%;
     display: flex;
     justify-content: space-evenly;
@@ -32,112 +45,125 @@
 
 .bloco-imagens1{
     background-color:red;
-    height: 40%;
-    width: 40%;
+    height: 90%;
+    width: 60%;
+    margin-right: 20px;
     display: flex;
     justify-content: center;
     justify-items: center;
     align-items: center;
+    border-radius: 5px;
 }
 .bloco-imagens2{
     background-color:rgb(248, 248, 248);
-    height: 40%;
-    width: 40%;
+    height: 90%;
+    width: 60%;
+    margin-right: 20px;
     display: flex;
     justify-content: center;
     justify-items: center;
     align-items: center;
+    border-radius: 5px;
 }
 .bloco-imagens3{
     background-color:rgb(255, 123, 0);
-    height: 40%;
-    width: 40%;
+    height: 90%;
+    width: 60%;
+    margin-right: 20px;
     display: flex;
     justify-content: center;
     justify-items: center;
     align-items: center;
+    border-radius: 5px;
 }
 .bloco-imagens4{
     background-color:rgb(68, 0, 255);
-    height: 40%;
-    width: 40%;
+    height: 90%;
+    width: 60%;
+    margin-right: 20px;
     display: flex;
     justify-content: center;
     justify-items: center;
     align-items: center;
+    border-radius: 5px;
 }
 .bloco-imagens5{
     background-color:rgb(255, 0, 191);
-    height: 40%;
-    width: 40%;
+    height: 90%;
+    width: 60%;
+    margin-right: 20px;
     display: flex;
     justify-content: center;
     justify-items: center;
     align-items: center;
+    border-radius: 5px;
 }
 .bloco-imagens6{
     background-color:rgb(0, 255, 85);
-    height: 40%;
-    width: 40%;
+    height: 90%;
+    width: 60%;
+    margin-right: 20px;
     display: flex;
     justify-content: center;
     justify-items: center;
     align-items: center;
+    border-radius: 5px;
 }
 .bloco-imagens7{
     background-color:rgb(200, 255, 0);
-    height: 40%;
-    width: 40%;
+    height: 90%;
+    width: 60%;
     display: flex;
     justify-content: center;
     justify-items: center;
     align-items: center;
+    border-radius: 5px;
 }
 
 .bloco-imagens1 > img{
-    height: 40px;
+    height: 70px;
     display: flex;
     justify-content: center;
     justify-items: center;
     align-items: center;
 }
 .bloco-imagens2 > img{
-    height: 40px;
+    height: 70px;
     display: flex;
     justify-content: center;
     justify-items: center;
     align-items: center;
 }
 .bloco-imagens3 > img{
-    height: 40px;
+    height: 70px;
     display: flex;
     justify-content: center;
     justify-items: center;
     align-items: center;
 }
 .bloco-imagens4 > img{
-    height: 40px;
+    height: 70px;
     display: flex;
     justify-content: center;
     justify-items: center;
     align-items: center;
 }
 .bloco-imagens5 > img{
-    height: 40px;
+    height: 70px;
     display: flex;
     justify-content: center;
     justify-items: center;
     align-items: center;
 }
 .bloco-imagens6 > img{
-    height: 40px;
+    height: 70px;
     display: flex;
     justify-content: center;
     justify-items: center;
     align-items: center;
 }
 .bloco-imagens7 > img{
-    height: 40px;
+    height: 70px;
     display: flex;
     justify-content: center;
     justify-items: center;
