@@ -5,16 +5,16 @@ body{
     align-items: center;
 }
 .conteudo{
-    background-color: #abf853;
-    height: 80%;
-    width: 80%;
+    background-color: #c6f88d;
+    height: 50%;
+    width: 55%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .titulo{
-    background-color: #abf853;
+    background-color: #c6f88d;
     color: #75B79E;
     height: 10%;
     width: 100%;
@@ -26,18 +26,18 @@ body{
     font-family: "Roboto", sans-serif;
 }
 .principal{
-    background-color: #abf853;
+    background-color: #c6f88d;
     height: 70%;
     width: 100%;
     margin-bottom: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items:center;
     flex-wrap: wrap;
 }
 .bloco1{
-    background-color: #abf853;
+    background-color: #c6f88d;
     height: 50%;
     width: 90%;
     margin-bottom: 2%;
@@ -58,73 +58,74 @@ body{
 }
 
 .bloco-imagens1{
-    background-color:#75B79E;
+    background-color:#A7E9AF;
     height: 100%;
-    margin-right: 2%;
     display: flex;
     justify-content: center;
     justify-items: center;
     align-items: center;
     border-radius: 5px;
+    margin: 2%;
 }
 .bloco-imagens2{
-    background-color:#75B79E;
+    background-color:#A7E9AF;
     height: 100%;
-    margin-right: 2%;
     display: flex;
     justify-content: center;
     justify-items: center;
     align-items: center;
     border-radius: 5px;
+    margin: 2%;
 }
 .bloco-imagens3{
-    background-color:#75B79E;
+    background-color:#A7E9AF;
     height: 100%;
-    margin-right: 2%;
     display: flex;
     justify-content: center;
     justify-items: center;
     align-items: center;
     border-radius: 5px;
+    margin: 2%;
 }
 .bloco-imagens4{
-    background-color:#75B79E;
+    background-color:#A7E9AF;
     height: 100%;
-    margin-right: 2%;
     display: flex;
     justify-content: center;
     justify-items: center;
     align-items: center;
     border-radius: 5px;
+    margin: 2%;
 }
 .bloco-imagens5{
-    background-color:#75B79E;
+    background-color:#A7E9AF;
     height: 100%;
-    margin-right: 2%;
     display: flex;
     justify-content: center;
     justify-items: center;
     align-items: center;
     border-radius: 5px;
+    margin: 2%;
 }
 .bloco-imagens6{
-    background-color:#75B79E;
+    background-color:#A7E9AF;
     height: 100%;
-    margin-right: 2%;
     display: flex;
     justify-content: center;
     justify-items: center;
     align-items: center;
     border-radius: 5px;
+    margin: 2%;
 }
 .bloco-imagens7{
-    background-color:#75B79E;
+    background-color:#A7E9AF;
     height: 100%;
     display: flex;
     justify-content: center;
     justify-items: center;
     align-items: center;
     border-radius: 5px;
+    margin: 2%;
 }
 
 .bloco-imagens1 > img{
@@ -175,4 +176,34 @@ body{
     justify-content: center;
     justify-items: center;
     align-items: center;
+}
+@media (max-width: 650px) {
+
+    .conteudo{
+        width: 100%;
+    }
+    .titulo{
+    background-color: #c6f88d;
+    color: #75B79E;
+    width: 60%;
+    font-size: 150%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    margin-left: 100px;
+
+    }
+    .bloco1{
+        background-color: #c6f88d;
+        height: 50%;
+        width: 30%;
+        margin-bottom: 2%;
+        margin-right: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
 }
