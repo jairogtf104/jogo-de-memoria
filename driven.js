@@ -16,4 +16,4 @@ function numeroDeCartas() {
 
 }
 
-window.onload = numeroDeCartas;
+window.onload = numeroDeCartas

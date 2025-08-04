@@ -46,16 +46,6 @@ body{
     justify-content: center;
     flex-wrap: wrap;
 }
- 
-.bloco2{
-    background-color:#abf853;
-    height: 50%;
-    width: 90%;
-    margin-right: 2%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
 
 .bloco-imagens1{
     background-color:#A7E9AF;
@@ -67,6 +57,10 @@ body{
     border-radius: 5px;
     margin: 2%;
 }
+.bloco1 > img :hover{
+    background-color: red;
+}
+
 .bloco-imagens2{
     background-color:#A7E9AF;
     height: 100%;
