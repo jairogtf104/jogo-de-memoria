@@ -1,4 +1,4 @@
-function numeroDeCartas() {
+/*function numeroDeCartas() {
 
     let numeroDasCartas = Number(prompt("qual o numero de cartas?"));
 
@@ -14,6 +14,47 @@ function numeroDeCartas() {
     }
 
 
-}
+}*/
 
-window.onload = numeroDeCartas
+
+window.onload = numeroDeCartas;
+
+function lista (elemmento){
+
+
+
+}
+/*<div class="bloco-imagens">
+                    <img src="assets/back.png" alt="">
+                </div>
+                <div class="bloco-imagens">
+                    <img src="assets/back.png" alt="">
+                </div>
+                <div class="bloco-imagens">
+                    <img src="assets/back.png" alt="">
+                </div>
+                <div class="bloco-imagens">
+                    <img src="assets/back.png" alt="">
+                </div>
+                <div class="bloco-imagens">
+                    <img src="assets/back.png" alt="">
+                </div>
+                <div class="bloco-imagens">
+                    <img src="assets/back.png" alt="">
+                </div>
+                <div class="bloco-imagens">
+                    <img src="assets/back.png" alt="">
+                </div>
+                <div class="bloco-imagens">
+                    <img src="assets/back.png" alt="">
+                </div>
+                <div class="bloco-imagens">
+                    <img src="assets/back.png" alt="">
+                </div>
+                <div class="bloco-imagens">
+                    <img src="assets/back.png" alt="">
+                </div>
+                <div class="bloco-imagens">
+                    <img src="assets/back.png" alt="">
+                </div>
+                <div class="bloco-imagens"> */
