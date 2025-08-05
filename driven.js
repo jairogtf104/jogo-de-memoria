@@ -1,6 +1,8 @@
+let numeroDasCartas =Number(prompt("qual o numero de cartas?"));
+
 /*function numeroDeCartas() {
 
-    let numeroDasCartas = Number(prompt("qual o numero de cartas?"));
+    numeroDasCartas = Number(prompt("qual o numero de cartas?"));
 
     while(numeroDasCartas % 2 !== 0){
 
@@ -21,40 +23,12 @@ window.onload = numeroDeCartas;
 
 function lista (elemmento){
 
+    let lista = [];
 
+    for(let i = 0; i < numeroDasCartas; i++ ){
+
+        lista.push(bloco-imagens.innerHTML == bloco-imagens.innerHTML + <li>lista[i]</li>);
+
+    }
 
 }
-/*<div class="bloco-imagens">
-                    <img src="assets/back.png" alt="">
-                </div>
-                <div class="bloco-imagens">
-                    <img src="assets/back.png" alt="">
-                </div>
-                <div class="bloco-imagens">
-                    <img src="assets/back.png" alt="">
-                </div>
-                <div class="bloco-imagens">
-                    <img src="assets/back.png" alt="">
-                </div>
-                <div class="bloco-imagens">
-                    <img src="assets/back.png" alt="">
-                </div>
-                <div class="bloco-imagens">
-                    <img src="assets/back.png" alt="">
-                </div>
-                <div class="bloco-imagens">
-                    <img src="assets/back.png" alt="">
-                </div>
-                <div class="bloco-imagens">
-                    <img src="assets/back.png" alt="">
-                </div>
-                <div class="bloco-imagens">
-                    <img src="assets/back.png" alt="">
-                </div>
-                <div class="bloco-imagens">
-                    <img src="assets/back.png" alt="">
-                </div>
-                <div class="bloco-imagens">
-                    <img src="assets/back.png" alt="">
-                </div>
-                <div class="bloco-imagens"> */
