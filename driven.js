@@ -21,14 +21,6 @@ let numeroDasCartas =Number(prompt("qual o numero de cartas?"));
 
 window.onload = numeroDeCartas;
 
-function lista (elemmento){
-
-    let lista = [];
-
-    for(let i = 0; i < numeroDasCartas; i++ ){
-
-        lista.push(bloco-imagens.innerHTML == bloco-imagens.innerHTML + <li>lista[i]</li>);
-
-    }
-
+function clicado(elemento){
+    alert("bom dia");
 }
