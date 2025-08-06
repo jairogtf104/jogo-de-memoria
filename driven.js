@@ -22,10 +22,76 @@ function numeroDeCartas() {
 
 window.onload = numeroDeCartas;
 
-function clicado(elemento){
+function viraCarta1(elemento){
     
-    let li = document.querySelector("li");
+    elemento.querySelector("img").src = "assets/bobrossparrot.gif";
+
+}
+
+function viraCarta2(elemento){
     
-    li.classList.add("hover");
+    elemento.querySelector("img").src = "assets/explodyparrot.gif";
+
+
+}
+
+function viraCarta3(elemento){
+    
+    elemento.querySelector("img").src = "assets/fiestaparrot.gif";
+
+}
+
+function viraCarta4(elemento){
+
+    elemento.querySelector("img").src = "assets/metalparrot.gif";
+
+}
+
+function viraCarta5(elemento){
+    
+    elemento.querySelector("img").src = "assets/revertitparrot.gif";
+
+}
+
+function viraCarta6(elemento){
+    
+    elemento.querySelector("img").src = "assets/tripletsparrot.gif";
+
+}
+
+function viraCarta7(elemento){
+    
+    elemento.querySelector("img").src = "assets/bobrossparrot.gif";
+
+}
+
+function viraCarta8(elemento){
+    
+    elemento.querySelector("img").src = "assets/explodyparrot.gif";
+
+}
+
+function viraCarta9(elemento){
+    
+    elemento.querySelector("img").src = "assets/fiestaparrot.gif";
+
+}
+
+function viraCarta10(elemento){
+    
+    elemento.querySelector("img").src = "assets/metalparrot.gif";
+
+
+}
+
+function viraCarta11(elemento){
+    
+    elemento.querySelector("img").src = "assets/revertitparrot.gif";
+
+}
+
+function viraCarta12(elemento){
+
+    elemento.querySelector("img").src = "assets/tripletsparrot.gif";
 
 }
