@@ -1,6 +1,7 @@
-let numeroDasCartas =Number(prompt("qual o numero de cartas?"));
 
-/*function numeroDeCartas() {
+
+/*let numeroDasCartas =Number(prompt("qual o numero de cartas?"));
+function numeroDeCartas() {
 
     numeroDasCartas = Number(prompt("qual o numero de cartas?"));
 
@@ -22,5 +23,9 @@ let numeroDasCartas =Number(prompt("qual o numero de cartas?"));
 window.onload = numeroDeCartas;
 
 function clicado(elemento){
-    alert("bom dia");
+    
+    let li = document.querySelector("li");
+    
+    li.classList.add("hover");
+
 }

@@ -57,7 +57,6 @@ body{
     border-radius: 5px;
     margin: 2%;
 }
-
 .carta > img{
     height: 80px;
     display: flex;
@@ -66,23 +65,22 @@ body{
     align-items: center;
 }
 @media (max-width: 650px) {
-
     .conteudo{
         width: 100%;
-    }
-    .titulo{
-    background-color: #c6f88d;
-    color: #75B79E;
-    width: 60%;
-    font-size: 150%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: "Roboto", sans-serif;
-    margin-left: 100px;
+}
+.titulo{
+background-color: #c6f88d;
+color: #75B79E;
+width: 60%;
+font-size: 150%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-family: "Roboto", sans-serif;
+margin-left: 100px;
 
-    }
+}
     .bloco{
         background-color: #c6f88d;
         height: 50%;
