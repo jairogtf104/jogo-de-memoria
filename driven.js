@@ -1,4 +1,6 @@
+let lista = 
 
+[bobrossparrot.gif, explodyparrot.gif, fiestaparrot.gif, metalparrot.gif, revertitparrot.gif, tripletsparrot.gif, unicornparrot.gif ];
 
 /*let numeroDasCartas =Number(prompt("qual o numero de cartas?"));
 function numeroDeCartas() {
@@ -95,6 +97,9 @@ function viraCarta12(elemento){
 
     elemento.querySelector("img").src = "assets/tripletsparrot.gif";
 
-    alert(FileList.length);
+    let lista = document.querySelector("ul");
+
+
+    alert(li.length);
 
 }

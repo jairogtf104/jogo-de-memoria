@@ -72,6 +72,7 @@ ul{
     justify-items: center;
     align-items: center;
     margin: 2%;
+    transition: img 3000;
 }
 @media (max-width: 650px) {
     .conteudo{
