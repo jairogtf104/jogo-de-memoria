@@ -24,6 +24,7 @@ body{
     justify-content: center;
     align-items: center;
     font-family: "Roboto", sans-serif;
+    margin: 2%;
 }
 .principal{
     background-color: #c6f88d;
@@ -46,7 +47,14 @@ body{
     justify-content: center;
     flex-wrap: wrap;
 }
-
+ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-right: 5%;
+    gap: 10px;
+}
 .carta{
     background-color:#A7E9AF;
     height: 100%;
@@ -55,14 +63,15 @@ body{
     justify-items: center;
     align-items: center;
     border-radius: 5px;
-    margin: 2%;
+    margin-right: 2%;
 }
 .carta > img{
-    height: 80px;
+    height: 90px;
     display: flex;
     justify-content: center;
     justify-items: center;
     align-items: center;
+    margin: 2%;
 }
 @media (max-width: 650px) {
     .conteudo{
