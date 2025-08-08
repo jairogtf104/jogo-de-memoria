@@ -20,6 +20,7 @@ function numeroDeCartas() {
 }*/
 
 
+
 window.onload = numeroDeCartas;
 
 function viraCarta1(elemento){
@@ -93,5 +94,7 @@ function viraCarta11(elemento){
 function viraCarta12(elemento){
 
     elemento.querySelector("img").src = "assets/tripletsparrot.gif";
+
+    alert(FileList.length);
 
 }
