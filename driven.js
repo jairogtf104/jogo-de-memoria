@@ -1,6 +1,6 @@
-let lista = 
+let lista = ["assets/back.png"]
 
-[bobrossparrot.gif, explodyparrot.gif, fiestaparrot.gif, metalparrot.gif, revertitparrot.gif, tripletsparrot.gif, unicornparrot.gif ];
+/*[bobrossparrot.gif, explodyparrot.gif, fiestaparrot.gif, metalparrot.gif, revertitparrot.gif, tripletsparrot.gif, unicornparrot.gif ];*/
 
 /*let numeroDasCartas =Number(prompt("qual o numero de cartas?"));
 function numeroDeCartas() {
@@ -18,10 +18,28 @@ function numeroDeCartas() {
 
     }
 
-
 }*/
 
+function driven() {
 
+    let lista = document.querySelectorAll("ul li");
+
+    let contador = 0;
+
+    while(contador < lista.length){
+
+        const carta = `
+            <li>
+                <div class="carta" onclick="viraCarta1(this)"><img src="assests${lista}"></div>
+            </li>
+            `;
+
+            lista.innerHTML;
+
+        contador++;
+
+    }
+}
 
 window.onload = numeroDeCartas;
 
@@ -93,13 +111,8 @@ function viraCarta11(elemento){
 
 }
 
-function viraCarta12(elemento){
+function viraCarta12(elemento) {
 
     elemento.querySelector("img").src = "assets/tripletsparrot.gif";
-
-    let lista = document.querySelector("ul");
-
-
-    alert(li.length);
 
 }
