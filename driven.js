@@ -1,8 +1,6 @@
-let lista = ["assets/back.png"]
+const ul = 
+["assets/bobrossparrot.gif", "assets/explodyparrot.gif", "assets/fiestaparrot.gif", "assets/metalparrot.gif", "assets/revertitparrot.gif", "assets/tripletsparrot.gif", "assets/unicornparrot.gif"]
 
-/*[bobrossparrot.gif, explodyparrot.gif, fiestaparrot.gif, metalparrot.gif, revertitparrot.gif, tripletsparrot.gif, unicornparrot.gif ];*/
-
-/*let numeroDasCartas =Number(prompt("qual o numero de cartas?"));
 function numeroDeCartas() {
 
     numeroDasCartas = Number(prompt("qual o numero de cartas?"));
@@ -13,35 +11,40 @@ function numeroDeCartas() {
 
         if(numeroDasCartas % 2 ===0 ){
 
-            console.log("cartas");
+            console.log(numeroDasCartas);
+
         }
 
     }
 
-}*/
+}
+    
+window.onload = numeroDeCartas;
 
-function driven() {
-
-    let lista = document.querySelectorAll("ul li");
+function criaCarta (elemento){
 
     let contador = 0;
 
-    while(contador < lista.length){
+    while(contador < ul.length){
 
-        const carta = `
-            <li>
-                <div class="carta" onclick="viraCarta1(this)"><img src="assests${lista}"></div>
-            </li>
-            `;
+        let img = ul[contador];
 
-            lista.innerHTML;
+        let imagem = `     
+
+        <li>                
+
+            <div class="carta" onclick="viraCarta1(this)"><img src="assets/back.png"></div>    
+
+        </li>`
 
         contador++;
 
     }
+
 }
 
-window.onload = numeroDeCartas;
+window.onload = criaCarta;
+/*
 
 function viraCarta1(elemento){
     
@@ -93,7 +96,7 @@ function viraCarta8(elemento){
 }
 
 function viraCarta9(elemento){
-    
+     
     elemento.querySelector("img").src = "assets/fiestaparrot.gif";
 
 }
@@ -111,8 +114,10 @@ function viraCarta11(elemento){
 
 }
 
-function viraCarta12(elemento) {
+function viraCarta12(elemento){
 
     elemento.querySelector("img").src = "assets/tripletsparrot.gif";
 
-}
+    alert(FileList.length);
+
+}*/
