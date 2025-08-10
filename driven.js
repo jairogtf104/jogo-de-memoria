@@ -11,14 +11,18 @@ function numeroDeCartas() {
 
     numeroCartas = Number(prompt("qual o numero de cartas?"));
 
-    while(numeroDasCartas % 2 !== 0){
+    if (numeroCartas > 3 && numeroCartas < 15){
 
-        numeroDasCartas = Number(prompt("qual o numero de cartas?"));
+        while(numeroDasCartas % 2 !== 0){
 
-        if(numeroCartas % 2 ===0 ){
-
-            console.log(numeroCartas);
-
+            numeroCartas = Number(prompt("qual o numero de cartas?"));
+    
+            if(numeroCartas % 2 ===0 ){
+    
+                console.log(numeroCartas);
+    
+            }
+    
         }
 
     }
@@ -46,3 +50,44 @@ function criaCarta (elemento){
 
 }
 
+criaCarta (elemento);
+
+/*
+                <ul>
+                    <li>
+                        <div class="carta" onclick="viraCarta1(this)"><img src="assets/back.png"></div>
+                    </li>
+                    <li>
+                        <div class="carta" onclick="viraCarta2(this)"><img src="assets/back.png"></div>
+                    </li>
+                    <li>
+                        <div class="carta" onclick="viraCarta3(this)"><img src="assets/back.png"></div>
+                    </li>
+                    <li>
+                        <div class="carta" onclick="viraCarta4(this)"><img src="assets/back.png"></div>
+                    </li>
+                    <li>
+                        <div class="carta" onclick="viraCarta5(this)"><img src="assets/back.png"></div>
+                    </li>
+                    <li>
+                        <div class="carta" onclick="viraCarta6(this)"><img src="assets/back.png"></div>
+                    </li>
+                    <li>
+                        <div class="carta" onclick="viraCarta7(this)"><img src="assets/back.png"></div>
+                    </li>
+                    <li>
+                        <div class="carta" onclick="viraCarta8(this)"><img src="assets/back.png"></div>
+                    </li>
+                    <li>
+                        <div class="carta" onclick="viraCarta9(this)"><img src="assets/back.png"></div>
+                    </li>
+                    <li>
+                        <div class="carta" onclick="viraCarta10(this)"><img src="assets/back.png"></div>
+                    </li>
+                    <li>
+                    <div class="carta" onclick="viraCarta11(this)"><img src="assets/back.png"></div>
+                    </li>
+                    <li>
+                        <div class="carta" onclick="viraCarta12(this)"><img src="assets/back.png"></div>
+                    </li>
+                </ul> */
