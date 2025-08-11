@@ -1,3 +1,5 @@
+let numeroCartas ="";
+
 const listaDeImagens = [
     "assets/bobrossparrot.gif", 
     "assets/explodyparrot.gif",
@@ -9,85 +11,41 @@ const listaDeImagens = [
  
 function numeroDeCartas() {
 
-    numeroCartas = Number(prompt("qual o numero de cartas?"));
+    numeroCartas = Number(prompt("Qual o número de cartas?"));
 
-    if (numeroCartas > 3 && numeroCartas < 15){
+    while (numeroCartas < 4 || numeroCartas > 14 || numeroCartas % 2 !== 0) {
 
-        while(numeroDasCartas % 2 !== 0){
-
-            numeroCartas = Number(prompt("qual o numero de cartas?"));
-    
-            if(numeroCartas % 2 ===0 ){
-    
-                console.log(numeroCartas);
-    
-            }
-    
-        }
+        numeroCartas = Number(prompt("Digite um número PAR entre 4 e 14:"));
 
     }
 
 }
+    
+numeroDeCartas();
+    
 
-function criaCarta (elemento){
+function criaCarta() {
+    const carta = document.querySelector(".principal");
 
-  const ul = document.querySelector("ul");
+    let contador = 0;
 
-  let contador = 0;
+    while (contador < numeroCartas) {
 
-  while(contador < numeroCartas){
+        const cartas = `
+        <div class="card">
+            <div class="front-face face">
+                <img src="assets/back.png">
+            </div>
+            <div class="back-face face">
+                <img src="assets/unicornparrot.gif">
+            </div>
+        </div>`;
 
-    const elementos = 
-    `<li>
-        <div class="carta" onclick="viraCarta1(this)"><img src="assets/back.png"></div>
-    </li>`;
+        carta.innerHTML += cartas;
 
-    ul.innerHTML += elementos;
-
-  contador++;
-
-  }
-
+        contador++;
+    }
 }
 
-criaCarta (elemento);
+criaCarta ();
 
-/*
-                <ul>
-                    <li>
-                        <div class="carta" onclick="viraCarta1(this)"><img src="assets/back.png"></div>
-                    </li>
-                    <li>
-                        <div class="carta" onclick="viraCarta2(this)"><img src="assets/back.png"></div>
-                    </li>
-                    <li>
-                        <div class="carta" onclick="viraCarta3(this)"><img src="assets/back.png"></div>
-                    </li>
-                    <li>
-                        <div class="carta" onclick="viraCarta4(this)"><img src="assets/back.png"></div>
-                    </li>
-                    <li>
-                        <div class="carta" onclick="viraCarta5(this)"><img src="assets/back.png"></div>
-                    </li>
-                    <li>
-                        <div class="carta" onclick="viraCarta6(this)"><img src="assets/back.png"></div>
-                    </li>
-                    <li>
-                        <div class="carta" onclick="viraCarta7(this)"><img src="assets/back.png"></div>
-                    </li>
-                    <li>
-                        <div class="carta" onclick="viraCarta8(this)"><img src="assets/back.png"></div>
-                    </li>
-                    <li>
-                        <div class="carta" onclick="viraCarta9(this)"><img src="assets/back.png"></div>
-                    </li>
-                    <li>
-                        <div class="carta" onclick="viraCarta10(this)"><img src="assets/back.png"></div>
-                    </li>
-                    <li>
-                    <div class="carta" onclick="viraCarta11(this)"><img src="assets/back.png"></div>
-                    </li>
-                    <li>
-                        <div class="carta" onclick="viraCarta12(this)"><img src="assets/back.png"></div>
-                    </li>
-                </ul> */
