@@ -40,8 +40,8 @@ body{
 
 }
 .card {
-  width: 100px;
-  height: 120px;
+  width: 80px;
+  height: 100px;
   position: relative;
   margin: 1%;
 }
@@ -69,11 +69,11 @@ body{
   transform: rotateY(180deg);
 }
 
-.card:hover .back-face {
+.card.flip .back-face {
   transform: rotateY(0deg);
 }
 
-.card:hover .front-face {
+.card .flip .front-face {
   transform: rotateY(-180deg);
 }
 @media (max-width: 650px) {

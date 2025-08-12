@@ -15,7 +15,7 @@ function numeroDeCartas() {
 
     while (numeroCartas < 4 || numeroCartas > 14 || numeroCartas % 2 !== 0) {
 
-        numeroCartas = Number(prompt("Digite um número PAR entre 4 e 14:"));
+        numeroCartas = Number(prompt("Qual o número de cartas?"));
 
     }
 
@@ -45,7 +45,23 @@ function criaCarta() {
 
         contador++;
     }
+
 }
 
-criaCarta ();
+criaCarta();
 
+function clickCarta(){
+
+    document.querySelectorAll('.card').forEach(card => {
+
+        card.addEventListener('click', () => {
+
+            card.classList.add('flip');
+
+        });
+
+    });
+
+}
+
+clickCarta();
