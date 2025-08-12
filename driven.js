@@ -65,3 +65,35 @@ function clickCarta(){
 }
 
 clickCarta();
+
+function embalharaLista(){
+
+    let c = 0;
+
+    let verso = document.querySelector(".back-face");
+
+    while(c < listaDeImagens.length){
+
+        let cartaVerso = `
+        <div class="card">
+            <div class="front-face face">
+                <img src="assets/back.png">
+            </div>
+            <div class="back-face face">
+                <img src=${listaDeImagens[c]}>
+            </div>`;
+
+            verso.innerHTML += cartaVerso;
+        
+    c++;
+}
+
+    minhaArray.sort(comparador); 
+
+    function comparador() { 
+        return Math.random() - 0.5; 
+    }
+
+}
+
+embalharaLista();
