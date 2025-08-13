@@ -1,5 +1,9 @@
 let numeroCartas ="";
 
+let frente =" ";
+
+let verso =" ";
+
 const listaDeImagens = [
     "assets/bobrossparrot.gif", 
     "assets/explodyparrot.gif",
@@ -25,11 +29,12 @@ numeroDeCartas();
     
 
 function criaCarta() {
+
     const carta = document.querySelector(".principal");
 
     let contador = 0;
 
-    while (contador < numeroCartas) {
+    while (contador < numeroCartas && contador < listaDeImagens.length) {
 
         const cartas = `
         <div class="card">
@@ -37,14 +42,17 @@ function criaCarta() {
                 <img src="assets/back.png">
             </div>
             <div class="back-face face">
-                <img src="assets/unicornparrot.gif">
+                 <img src=${listaDeImagens[contador]}>
             </div>
         </div>`;
 
         carta.innerHTML += cartas;
 
         contador++;
+
     }
+
+
 
 }
 
@@ -65,35 +73,3 @@ function clickCarta(){
 }
 
 clickCarta();
-
-function embalharaLista(){
-
-    let c = 0;
-
-    let verso = document.querySelector(".back-face");
-
-    while(c < listaDeImagens.length){
-
-        let cartaVerso = `
-        <div class="card">
-            <div class="front-face face">
-                <img src="assets/back.png">
-            </div>
-            <div class="back-face face">
-                <img src=${listaDeImagens[c]}>
-            </div>`;
-
-            verso.innerHTML += cartaVerso;
-        
-    c++;
-}
-
-    minhaArray.sort(comparador); 
-
-    function comparador() { 
-        return Math.random() - 0.5; 
-    }
-
-}
-
-embalharaLista();
