@@ -60,13 +60,21 @@ criaCarta();
 
 function clickCarta(){
 
+    let i = 0;
+
     document.querySelectorAll('.card').forEach(card => {
 
         card.addEventListener('click', () => {
 
+            i++;
+
             card.classList.add('flip');
 
         });
+
+        
+
+    alert(i);
 
     });
 
