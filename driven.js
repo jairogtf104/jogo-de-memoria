@@ -1,8 +1,8 @@
 let numeroCartas ="";
 
-let frente =" ";
+let carta1 =" ";
 
-let verso =" ";
+let carta2 =" ";
 
 const listaDeImagens = [
     "assets/bobrossparrot.gif", 
@@ -60,23 +60,26 @@ criaCarta();
 
 function clickCarta(){
 
-    let i = 0;
-
     document.querySelectorAll('.card').forEach(card => {
 
         card.addEventListener('click', () => {
+            
+            this.classList.add("flip");
 
-            i++;
+            carta1 === this;
+
+            carta2 === this;
+
+            
 
             card.classList.add('flip');
 
         });
-
         
 
-    alert(i);
-
     });
+
+    alert(i);
 
 }
 
