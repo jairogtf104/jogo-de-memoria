@@ -42,7 +42,7 @@ function criaCarta() {
                 <img src="assets/back.png">
             </div>
             <div class="back-face face">
-                 <img src=${listaDeImagens[contador]}>
+                 <img src=${listaDeImagens[contador * 2]}>
             </div>
         </div>`;
 
@@ -63,23 +63,28 @@ function clickCarta(){
     document.querySelectorAll('.card').forEach(card => {
 
         card.addEventListener('click', () => {
-            
-            this.classList.add("flip");
-
-            carta1 === this;
-
-            carta2 === this;
-
-            
 
             card.classList.add('flip');
+
+            this.classList.add("flip");
+
+            carta1 = document.querySelector(".back-face img").src;
+
+            carta2 = document.querySelector(".back-face img").src;
+
+            if(carta1 !== carta2){
+
+                carta1 =" ";
+
+                carta2 =" ";
+
+            }
+            
 
         });
         
 
     });
-
-    alert(i);
 
 }
 
