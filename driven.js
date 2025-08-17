@@ -1,13 +1,18 @@
 let numeroCartas ="";
 
-let carta1 =" ";
+let carta1 = null;
 
-let carta2 =" ";
+let carta2 = null;
+
+let travar = false;
 
 let imagem2 =" ";
 
 let paraClique = "";
 
+let jogadas = 0;
+
+let paresEncontrados = 0;
 
 const listaDeImagens = [
     "assets/bobrossparrot.gif", 
@@ -18,9 +23,15 @@ const listaDeImagens = [
     "assets/tripletsparrot.gif",
     "assets/unicornparrot.gif"]
  
-function numeroDeCartas() {
+listaDeImagens.sort(embaralha);
 
-    numeroCartas = Number(prompt("Qual o número de cartas?"));
+function embaralha(){
+
+    return Math.random() - 0.5; 
+
+}
+
+function numeroDeCartas() {
 
     while (numeroCartas < 4 || numeroCartas > 14 || numeroCartas % 2 !== 0) {
 
@@ -31,66 +42,115 @@ function numeroDeCartas() {
 }
     
 numeroDeCartas();
-    
+
+function cartas() {
+
+  let metade = numeroCartas / 2;
+
+  let selecionadas = listaDeImagens.slice(0, metade);
+
+  let pares = [...selecionadas, ...selecionadas];
+
+  pares.sort(() => Math.random() - 0.5); 
+
+  return pares;
+
+}
 
 function criaCarta() {
 
-    const carta = document.querySelector(".principal");
+  const container = document.querySelector(".principal");
 
-    let contador = 0;
+  let imagens = cartas();
 
-    while (contador < numeroCartas && contador < listaDeImagens.length) {
+  imagens.forEach(img => {
 
-        const cartas = `
-        <div class="card">
-            <div class="front-face face">
-                <img src="assets/back.png">
-            </div>
-            <div class="back-face face">
-                 <img src=${listaDeImagens[contador]}>
-            </div>
-        </div>`;
+    const cartaHTML = `
+      <div class="card">
+        <div class="front-face face">
+          <img src="assets/back.png">
+        </div>
+        <div class="back-face face">
+          <img src="${img}">
+        </div>
+      </div>
+    `;
+    container.innerHTML += cartaHTML;
 
-        carta.innerHTML += cartas;
-
-        contador++;
-
-    }
-
-
+  });
 }
 
 criaCarta();
 
-function clickCarta(){
+function clickCarta() {
 
-    document.querySelectorAll('.card').forEach(card => {
+  document.querySelectorAll(".card").forEach(card => {
 
-        card.addEventListener('click', () => {
+    card.addEventListener("click", () => {
 
-            card.classList.add('flip');
+      if (travar || card.classList.contains("flip")) return;
 
-            this.classList.add("flip");
+      card.classList.add("flip");
 
-            carta1 = card;
+      jogadas++;
 
-            carta2 = card;
+      if (!carta1) {
 
-            imagem1 = carta1.querySelector(".back-face img").src;
+        carta1 = card;
 
-            imagem2 = carta2.querySelector(".back-face img").src;
+      } else {
 
+        carta2 = card;
 
-            if(imagem1 === imagem2){
+        travar = true;
 
-               alert("iguais");
+        let img1 = carta1.querySelector(".back-face img").src;
 
-            }
+        let img2 = carta2.querySelector(".back-face img").src;
 
-        });
-        
+        if (img1 === img2) {
+
+          paresEncontrados++;
+
+          carta1 = null;
+
+          carta2 = null;
+
+          travar = false;
+
+          if (paresEncontrados === numeroCartas / 2) {
+
+            setTimeout(() => {
+
+              alert(`Você ganhou em ${jogadas} jogadas!`);
+
+            }, 500);
+
+          }
+
+        } else {
+
+          setTimeout(() => {
+
+            carta1.classList.remove("flip");
+
+            carta2.classList.remove("flip");
+
+            carta1 = null;
+
+            carta2 = null;
+
+            travar = false;
+
+          }, 1000);
+
+        }
+
+      }
 
     });
+
+  });
 
 }
 
